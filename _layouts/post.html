@@ -7,12 +7,16 @@ layout: default
       <h1 class="post__title--grouped">{{ page.title }}</h1>
       <div class="post__meta">
         <b class="post__author">{% if page.author %}{{ page.author }}{% endif %}</b>
+				<!-- <b class="post__category">{% if page.category %}{{ page.category }}{% endif %}</b> -->
         <b class="post__sep">•</b>
         <b class="post__date">{{ page.date | date: "%b %-d, %Y" }}</b>
       </div>
     </header>
-    {% if page.image %}
-    <img class="feat-img is-hidden-mobile" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/img/postimg/{{ page.image }}">
+    {% if page.image1 %}
+    <img class="feat-img is-hidden-mobile" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/img/postimg/{{ page.image1 }}">
+    {% endif %}
+		{% if page.image2 %}
+    <img class="feat-img is-hidden-mobile" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/img/postimg/{{ page.image2 }}">
     {% endif %}
     <article class="post__content">
       {{ content }}

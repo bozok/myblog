@@ -25,7 +25,7 @@ defaults:
       author: Ali Fatih AYDIN
       layout: "post"
       category: family
-      comments: true
+      comments: false
   -
     scope:
       path: "" # an empty string here means all files in the project
