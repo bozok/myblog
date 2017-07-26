@@ -18,6 +18,9 @@ layout: default
 		{% if page.image2 %}
     <img class="feat-img is-hidden-mobile" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/img/postimg/{{ page.image2 }}">
     {% endif %}
+		{% if page.image3 %}
+    <img class="feat-img is-hidden-mobile" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/img/postimg/{{ page.image3 }}">
+    {% endif %}
     <article class="post__content">
       {{ content }}
 
